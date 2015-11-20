@@ -1,0 +1,10 @@
+{
+	"name": "bimep",
+	"private": true,
+	"version": "0.0.1",
+	"description": "BIM Execution Plan generator",
+	"author": "Andrew Salveson <andrew.salveson@perkinswill.com>",
+	"dependencies": {
+		"express":"3.2.4"
+	}
+}
