@@ -1,0 +1,26 @@
+<html>
+<head>
+	<link rel='stylesheet' href='css/styles.css' />
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>	
+	<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+	<script src="json-editor/jsoneditor.js"></script>
+</head>
+<body>
+	<div id="darkMask" class="mask dark bottom" style="display:none;"></div>
+	<div id="selectFile" class="modal" style="display:none;">
+		<button class="close">x</button>
+		<div id="target" style="display:none;"></div>
+		<div id="browser"></div>
+		<button id="buttonSelectDirectory">select this folder</button>
+	</div>
+	<div class="container">
+	<select id="projectList" style="float:right;"></select>
+	<h1 id="pageTitle"></h1>
+	<br><br>
+	<div id="projectEditor" style="clear:both;"></div>
+	<button id="saveProject"><i class="fa fa-floppy-o fa-lg"></i> save </button>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>

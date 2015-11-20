@@ -1,0 +1,144 @@
+{
+	"type":"object",
+	"title":"project",
+	"properties":{
+		"name":{
+			"title":"long name",
+			"type":"string"
+		},
+		"shortname":{
+			"title":"short name",
+			"type":"string"
+		},
+		"project_number":{
+			"title":"project number",
+			"type":"string"
+		},
+		"file_name":{
+			"title":"file name (generated)",
+			"type":"string",
+			"template":"{{pnum}}-{{sname}}",
+			"watch":{
+				"pnum":"project_number",
+				"sname":"shortname"
+			}
+		},
+		"path":{
+			"title":"root path",
+			"type":"string",
+			"format":"textarea",
+			"options":{
+				"input_height":"40"
+			}
+		},
+		"files":{
+			"type":"array",
+			"format":"table",
+			"title":"files to monitor",
+			"items":{
+				"type": "object",
+				"title": "file",
+				"properties": {
+					"path":{
+						"title":"file path",
+						"type":"string",
+						"format":"textarea",
+						"options":{
+							"input_height":"40"
+						}
+					},
+					"actions":{
+						"type": "array",
+						"format": "table",
+						"title": "automated actions",
+						"items":{
+							"type":"object",
+							"title":"action",
+							"properties":{
+								"to":{
+									"title":"destination format",
+									"type":"string",
+									"enum":[
+										"Revit",
+										"Shapefile",
+										"Excel",
+										"DWG",
+										"PDF"
+									]
+								},
+								"path":{
+									"title":"output path",
+									"type":"string",
+									"format":"textarea",
+									"options":{
+										"input_height":"40"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"folders":{
+			"title":"folders to monitor",
+			"type":"array",
+			"format":"table",
+			"items":{
+				"type": "object",
+				"title": "folder",
+				"properties": {
+					"path":{
+						"title":"folder",
+						"type":"string",
+						"format":"textarea",
+						"options":{
+							"input_height":"40"
+						}
+					},
+					"actions":{
+						"type": "array",
+						"format": "table",
+						"title": "automated actions",
+						"items":{
+							"type":"object",
+							"title":"action",
+							"properties":{
+								"from":{
+									"title":"source format",
+									"type":"string",
+									"enum":[
+										"Revit",
+										"Shapefile",
+										"Excel",
+										"DWG",
+										"PDF"
+									]
+								},
+								"to":{
+									"title":"destination format",
+									"type":"string",
+									"enum":[
+										"Revit",
+										"Shapefile",
+										"Excel",
+										"DWG",
+										"PDF"
+									]
+								},
+								"path":{
+									"title":"output path",
+									"type":"string",
+									"format":"textarea",
+									"options":{
+										"input_height":"40"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

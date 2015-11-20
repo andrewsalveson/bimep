@@ -1,0 +1,10 @@
+{
+	"type" : "string",
+	"enum" : [
+		"SD",
+		"DD",
+		"CD",
+		"CA",
+		"FM"
+	]
+}

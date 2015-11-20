@@ -1,0 +1,21 @@
+{
+	"title" : "company",
+	"headerTemplate" : "{{self.name}}",
+	"type" : "object",
+	"properties" : {
+		"name" : {
+			"title" : "name",
+			"type" : "string"
+		},
+		"address" : {
+			"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/address.json"
+		},
+		"contacts" : {
+			"type" : "array",
+			"title" : "contacts",
+			"items" : {
+				"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/contact.json"
+			}
+		}
+	}
+}

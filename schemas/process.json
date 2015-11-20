@@ -1,0 +1,25 @@
+{
+	"type":"object",
+	"title":"Process",
+	"properties":{
+		"process":{
+			"title":"process description",
+			"format":"textarea",
+			"options":{
+				"input_height":"40"
+			},
+			"type":"string"
+		},
+		"goal":{
+			"title":"goal",
+			"format":"textarea",
+			"options":{
+				"input_height":"40"
+			},
+			"type":"string"
+		},
+		"deliverable":{
+			"$ref":"http://pwc01gisdata/specs/modules/Specs/Schemas/deliverable.json"
+		}
+	}
+}

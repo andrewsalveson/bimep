@@ -1,0 +1,11 @@
+{
+	"title":"source format",
+	"type":"string",
+	"enum":[
+		"Revit",
+		"Shapefile",
+		"Excel",
+		"DWG",
+		"PDF"
+	]
+}

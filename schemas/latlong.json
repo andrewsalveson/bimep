@@ -1,0 +1,8 @@
+{
+	"title":"latitude/longitude",
+	"type":"object",
+	"properties":{
+		"latitude":{"title":"latitude","type":"string"},
+		"longitude":{"title":"longitude","type":"string"}
+	}
+}

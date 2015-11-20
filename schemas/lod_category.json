@@ -1,0 +1,19 @@
+{
+	"title" : "category",
+	"headerTemplate" : "{{self.name}}",
+	"type" : "object",
+	"properties" : {
+		"name" : {
+			"title" : "category",
+			"type" : "string"
+		},
+		"items" : {
+			"title":"items",
+			"type" : "array",
+			"format" : "table",
+			"items" : {
+				"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/lod_item.json"
+			}
+		}
+	}
+}

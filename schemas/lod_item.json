@@ -1,0 +1,18 @@
+{
+	"title":"LOD item",
+	"type" : "object",
+	"properties" : {
+		"name" : {
+			"type" : "string"
+		},
+		"phase" : {
+			"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/phase.json"
+		},
+		"lod" : {
+			"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/lod_level.json"
+		},
+		"discipline" : {
+			"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/discipline.json"
+		}
+	}
+}

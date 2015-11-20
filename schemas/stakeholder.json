@@ -1,0 +1,23 @@
+{
+	"title" : "Stakeholder",
+	"headerTemplate" : "{{i}} {{self.company.name}}",
+	"type" : "object",
+	"properties" : {
+		"role" : {
+			"title" : "role",
+			"type" : "string",
+			"enum" : [
+				"Architect",
+				"Landscape Architect",
+				"Civil Engineer",
+				"Mechanical Engineer",
+				"Structural Engineer",
+				"Electrical Engineer",
+				"Fire Protection and Code Firm"
+			]
+		},
+		"company" : {
+			"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/company.json"
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"title" : "Discipline",
+	"type" : "string",
+	"enum" : [
+		"Architecture",
+		"Civil",
+		"Electrical",
+		"Equipment",
+		"Fire Protection",
+		"Furniture",
+		"Interiors",
+		"Low Voltage",
+		"Mechanical",
+		"Plumbing",
+		"Structural"
+	]
+}

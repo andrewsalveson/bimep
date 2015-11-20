@@ -1,0 +1,13 @@
+{
+	"title":"project location",
+	"type":"object",
+	"format":"table",
+	"properties":{
+		"address":{
+			"$ref":"http://pwc01gisdata/specs/modules/Specs/Schemas/address.json"
+		},
+		"latlong":{
+			"$ref":"http://pwc01gisdata/specs/modules/Specs/Schemas/latlong.json"
+		}
+	}
+}

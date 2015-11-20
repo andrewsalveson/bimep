@@ -1,0 +1,11 @@
+{
+	"title":"address",
+	"type":"object",
+	"properties":{
+		"street":{"title":"street","type":"string"},
+		"city":{"title":"city","type":"string"},
+		"state":{"title":"state","type":"string"},
+		"country":{"title":"country","type":"string"},
+		"mail":{"title":"zip/postcode","type":"string"}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"title" : "LOD",
+	"type" : "array",
+	"format" : "tabs",
+	"items":{
+		"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/lod_category.json"
+	}
+
+}

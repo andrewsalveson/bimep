@@ -1,0 +1,20 @@
+{
+	"title" : "Milestone",
+	"type" : "object",
+	"properties" : {
+		"name" : {
+			"type" : "string"
+		},
+		"start" : {
+			"type" : "string",
+			"format" : "date"
+		},
+		"end" : {
+			"type" : "string",
+			"format" : "date"
+		},
+		"deliverable" : {
+			"type" : "string"
+		}
+	}
+}

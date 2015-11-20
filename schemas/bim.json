@@ -1,0 +1,138 @@
+{
+	"title" : "BIM",
+	"type" : "object",
+	"options" : {
+		"collapsed" : true
+	},
+	"format" : "table",
+	"properties" : {
+		"overview" : {
+			"title" : "BIM overview",
+			"type" : "string",
+			"format" : "textarea"
+		},
+		"Collaboration_Systems" : {
+			"title" : "Collaboration Systems",
+			"type" : "object",
+			"options" : {
+				"collapsed" : true
+			},
+			"properties" : {
+				"Collaboration_Plan" : {
+					"title" : "Collaboration Plan",
+					"type" : "string"
+				},
+				"Document_Managment_System" : {
+					"title" : "Document Managment System",
+					"type" : "string"
+				},
+				"Document_Management_Solution" : {
+					"title" : "Document Management Solution",
+					"type" : "string"
+				}
+			}
+		},
+		"Model_Delivery_Schedule" : {
+			"title" : "Model Delivery Schedule, Exchange, Submission and Approval",
+			"options" : {
+				"collapsed" : true
+			},
+			"type" : "string"
+		},
+		"BIM_File_Release_and_Transfer" : {
+			"title" : "BIM File Release and Transfer",
+			"type" : "object",
+			"options" : {
+				"collapsed" : true
+			},
+			"properties" : {
+				"EFTA_Agreement_File_Release_to_Contractor" : {
+					"title" : "EFTA Agreement File Release to Contractor",
+					"type" : "string"
+				}
+			}
+		},
+		"Design_Coordination_Analysis" : {
+			"title" : "Design Coordination Analysis",
+			"type" : "object",
+			"options" : {
+				"collapsed" : true
+			},
+			"properties" : {
+				"Clash_Detection" : {
+					"title" : "Clash Detection",
+					"type" : "string"
+				},
+				"Clash_Dectection_Frequency" : {
+					"title" : "Clash Dectection Frequency",
+					"type" : "string"
+				},
+				"Clash_Detection_Submission_System" : {
+					"title" : "Clash Detection Submission System",
+					"type" : "string"
+				},
+				"Clash_Detection_Participants" : {
+					"title" : "Clash Detection Participants",
+					"type" : "string"
+				},
+				"Clash_Detection_Markup_Procedures" : {
+					"title" : "Clash Detection Markup Procedures",
+					"type" : "string"
+				},
+				"Clash_Detection_Markup_Frequency" : {
+					"title" : "Clash Detection Markup Frequency",
+					"type" : "string"
+				},
+				"Design_Software" : {
+					"title" : "Design Software",
+					"type" : "string"
+				},
+				"Design_Software_Transmit_Format" : {
+					"title" : "Design Software Transmit Format",
+					"type" : "string"
+				},
+				"Design_Software_Submission_System" : {
+					"title" : "Design Software Submission System",
+					"type" : "string"
+				},
+				"Design_Software_Participants" : {
+					"title" : "Design Software Participants",
+					"type" : "string"
+				},
+				"Design_Software_Markup_Procedures" : {
+					"title" : "Design Software Markup Procedures",
+					"type" : "string"
+				},
+				"Design_Software_Markup_Frequency" : {
+					"title" : "Design Software Markup Frequency",
+					"type" : "string"
+				}
+			}
+		},
+		"Model_Guidelines" : {
+			"title" : "Model Guidelines",
+			"type" : "object",
+			"options" : {
+				"collapsed" : true
+			},
+			"properties" : {
+				"version_of_Revit_at_project_start" : {
+					"title" : "What is the version of Revit that will be used during project start?",
+					"type" : "string",
+					"enum" : [
+						"2012", "2013", "2014", "2015", "2016"
+					]
+				}
+			}
+		},
+		"BIM_uses" : {
+				"format" : "grid",	"options" : {
+		"collapsed" : true
+	},
+			"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/bim_uses.json"
+		},
+		"LOD" : {
+			"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/lod.json"
+		}
+	}
+}

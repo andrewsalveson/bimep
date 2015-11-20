@@ -1,0 +1,17 @@
+{
+	"type": "object",
+	"title": "file",
+	"properties": {
+		"path":{
+			"title":"file path",
+			"type":"string",
+			"format":"textarea",
+			"options":{
+				"input_height":"40"
+			}
+		},
+		"actions":{
+			"$ref":"http://pwc01gisdata/pi/api.php/v1/schema/file_action"
+		}
+	}
+}

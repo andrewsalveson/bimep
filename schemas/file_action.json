@@ -1,0 +1,22 @@
+{
+	"type": "array",
+	"format": "table",
+	"title": "automated actions",
+	"items":{
+		"type":"object",
+		"title":"action",
+		"properties":{
+			"to":{
+				"$ref": "http://pwc01gisdata/pi/api.php/v1/schema/destination"
+			},
+			"path":{
+				"title":"output path",
+				"type":"string",
+				"format":"textarea",
+				"options":{
+					"input_height":"40"
+				}
+			}
+		}
+	}
+}

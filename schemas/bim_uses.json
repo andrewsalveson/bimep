@@ -1,0 +1,206 @@
+{
+	"title" : "BIM uses",
+	"type" : "object",
+
+	"properties" : {
+		"Planning" : {
+			"title" : "Planning",
+			"type" : "object",
+			"properties" : {
+				"Programming" : {
+					"title" : "Programming",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Site_Analysis" : {
+					"title" : "Site Analysis",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Phase_Planning_4D_Modeling" : {
+					"title" : "Phase Planning (4D) Modeling",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Cost_Estimation" : {
+					"title" : "Cost Estimation",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Existing_Conditions_Modeling" : {
+					"title" : "Existing Conditions Modeling",
+					"type" : "boolean",
+					"format" : "checkbox"
+				}
+			}
+		},
+		"Design_and_Deliverables" : {
+			"title" : "Design and Deliverables",
+			"type" : "object",
+			"properties" : {
+				"Design_Authoring" : {
+					"title" : "Design Authoring",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Design_Reviews" : {
+					"title" : "Design Reviews",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"3D_Coordination" : {
+					"title" : "3D Coordination",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Structural_Analysis" : {
+					"title" : "Structural Analysis",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Lighting_Analysis" : {
+					"title" : "Lighting Analysis",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Energy_Analysis" : {
+					"title" : "Energy Analysis",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Mechanical_Systems_Analysis" : {
+					"title" : "Mechanical Systems Analysis",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Other_Engineering_Analysis_as_Appropriate" : {
+					"title" : "Other Engineering Analysis as Appropriate",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Sustainability_Eval" : {
+					"title" : "Sustainability Evaluation (LEED, Net Zero, Living Building)",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Code_Validation" : {
+					"title" : "Code Validation",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Phase_Planning_4D_Modeling" : {
+					"title" : "Phase Planning (4D) Modeling",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Cost_Estimation" : {
+					"title" : "Cost Estimation",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Existing_Conditions_Modeling" : {
+					"title" : "Existing Conditions Modeling",
+					"type" : "boolean",
+					"format" : "checkbox"
+				}
+			}
+		},
+		"Construction_Administration" : {
+			"title" : "Construction Administration",
+			"type" : "object",
+			"properties" : {
+				"Site_Utilization_Planning" : {
+					"title" : "Site Utilization Planning",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Construction_Systems_Design" : {
+					"title" : "Construction Systems Design",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"3D_Coordination" : {
+					"title" : "3D Coordination",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Digital_Fabrication" : {
+					"title" : "Digital Fabrication",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"3D_Control_and_Planning" : {
+					"title" : "3D Control and Planning",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Record_Modeling" : {
+					"title" : "Record Modeling",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Phase_Planning_4D_Modeling" : {
+					"title" : "Phase Planning (4D) Modeling",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Cost_Estimation" : {
+					"title" : "Cost Estimation",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Existing_Conditions_Modeling" : {
+					"title" : "Existing Conditions Modeling",
+					"type" : "boolean",
+					"format" : "checkbox"
+				}
+			}
+		},
+		"Operation" : {
+			"title" : "Operation",
+			"type" : "object",
+			"properties" : {
+				"Building_Maintenance_Scheduling" : {
+					"title" : "Building Maintenance Scheduling",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Building_System_Analysis" : {
+					"title" : "Building System Analysis",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Asset_Management" : {
+					"title" : "Asset Management",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Space_Management_Tracking" : {
+					"title" : "Space Management Tracking",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Disaster_Planning" : {
+					"title" : "Disaster Planning",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Record_Modeling" : {
+					"title" : "Record Modeling",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Cost_Estimation" : {
+					"title" : "Cost Estimation",
+					"type" : "boolean",
+					"format" : "checkbox"
+				},
+				"Existing_Conditions_Modeling" : {
+					"title" : "Existing Conditions Modeling",
+					"type" : "boolean",
+					"format" : "checkbox"
+				}
+			}
+		}
+	}
+}

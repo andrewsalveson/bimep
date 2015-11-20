@@ -1,0 +1,200 @@
+{
+	"type" : "object",
+	"title" : "Unnamed Project",
+	"headerTemplate" : "{{self.project.name}}",
+	"properties" : {
+		"project" : {
+			"type" : "object",
+			"format" : "tabs",
+			"options" : {
+				"collapsed" : true
+			},
+			"title" : "Project Information",
+			"properties" : {
+				"name" : {
+					"title" : "project name",
+					"type" : "string"
+				},
+				"shortname" : {
+					"title" : "project short name",
+					"type" : "string"
+				},
+				"number" : {
+					"title" : "project number",
+					"type" : "string"
+				},
+				"file_name" : {
+					"title" : "file name (generated)",
+					"type" : "string",
+					"template" : "{{pnum}}-{{sname}}",
+					"watch" : {
+						"pnum" : "project.number",
+						"sname" : "project.shortname"
+					}
+				},
+				"path" : {
+					"title" : "project root path",
+					"type" : "string",
+					"format" : "textarea",
+					"options" : {
+						"input_height" : "40"
+					}
+				},
+				"owner" : {
+					"title" : "owner",
+					"type" : "object",
+					"options" : {
+						"collapsed" : true
+					},
+					"properties" : {
+						"owner_representatives" : {
+							"title" : "owner representatives",
+							"type" : "array",
+							"format" : "table",
+							"items" : {
+								"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/contact.json"
+							}
+						}
+					}
+				},
+				"location" : {
+					"options" : {
+						"collapsed" : true
+					},
+					"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/location.json"
+				},
+				"contract_type" : {
+					"title" : "contract type",
+					"type" : "string"
+				},
+				"description" : {
+					"title" : "project description",
+					"type" : "string",
+					"format" : "html",
+					"options" : {
+						"wysiwyg" : true,
+						"input_height" : "100"
+					}
+				},
+				"additional_information" : {
+					"title" : "additional information",
+					"type" : "array",
+					"options" : {
+						"collapsed" : true
+					},
+					"format" : "table",
+					"items" : {
+						"title" : "additional information",
+						"type" : "string",
+						"format" : "textarea"
+					}
+				},
+				"stakeholders" : {
+					"title" : "stakeholders",
+					"type" : "array",
+					"options" : {
+						"collapsed" : true
+					},
+					"format" : "tabs",
+					"items" : {
+						"title" : "stakeholder",
+						"headerTemplate" : "{{i}} {{self.role}}\n{{self.company.name}}",
+						"type" : "object",
+						"properties" : {
+							"company" : {
+								"options" : {
+									"collapsed" : true
+								},
+								"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/company.json"
+							},
+							"role" : {
+								"title" : "role",
+								"type" : "string",
+								"enum" : [
+									"Client",
+									"Architect",
+									"Landscape Architect",
+									"Civil Engineer",
+									"Mechanical Engineer",
+									"Structural Engineer",
+									"Electrical Engineer",
+									"Fire Protection and Code Firm"
+								]
+							},
+							"model_manager" : {
+								"title" : "model manager",
+								"options" : {
+									"collapsed" : true
+								},
+								"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/contact.json"
+							}
+						}
+					}
+				}
+			}
+		},
+		"schedule" : {
+			"title" : "Schedule and Milestones",
+			"type" : "array",
+			"options" : {
+				"collapsed" : true
+			},
+			"format" : "table",
+			"items" : {
+				"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/milestone.json"
+			}
+		},
+		"process" : {
+			"title" : "Process Data",
+			"type" : "object",
+			"options" : {
+				"collapsed" : true
+			},
+			"properties" : {
+				"work_processes" : {
+					"type" : "array",
+					"format" : "table",
+					"title" : "Processes",
+					"items" : {
+						"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/process.json"
+					}
+				},
+				"meetings" : {
+					"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/meetings.json"
+				},
+				"action_items" : {
+					"type" : "array",
+					"format" : "table",
+					"options" : {
+						"collapsed" : true
+					},
+					"title" : "action items",
+					"items" : {
+						"type" : "object",
+						"title" : "action item",
+						"properties" : {
+							"sub_group" : {
+								"title" : "sub group",
+								"type" : "string"
+							},
+							"frequency" : {
+								"title" : "frequency",
+								"type" : "string"
+							},
+							"intent" : {
+								"title" : "intent",
+								"type" : "string"
+							}
+						}
+					}
+				}
+			}
+		},
+		"bim" : {
+			"options" : {
+				"collapsed" : true
+			},
+			"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/bim.json"
+		}
+	}
+}

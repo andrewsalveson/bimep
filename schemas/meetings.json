@@ -1,0 +1,54 @@
+{
+	"title" : "Meetings",
+	"type" : "object",					"options" : {
+						"collapsed" : true
+					},
+	"properties" : {
+		"agendas" : {
+			"type" : "array",
+			"format" : "table",
+			"title" : "meeting agendas",
+			"items" : {
+				"type" : "object",
+				"title" : "agenda item",
+				"properties" : {
+					"agenda item" : {
+						"title" : "agenda",
+						"format" : "textarea",
+						"options" : {
+							"input_height" : "40"
+						},
+						"type" : "string"
+					},
+					"intent" : {
+						"title" : "intent",
+						"format" : "textarea",
+						"options" : {
+							"input_height" : "40"
+						},
+						"type" : "string"
+					}
+				}
+			}
+		},
+		"types" : {
+			"type" : "array",
+			"format" : "table",
+			"title" : "meeting types",
+			"items" : {
+				"type" : "object",
+				"title" : "meeting type",
+				"properties" : {
+					"meeting_type" : {
+						"title" : "sub group",
+						"type" : "string"
+					},
+					"process" : {
+						"title" : "frequency",
+						"type" : "string"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"title" : "contact",
+	"type" : "object",
+	"format" : "grid",
+	"properties" : {
+		"title" : {
+			"title" : "title",
+			"type" : "string"
+		},
+		"person" : {
+			"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/person.json"
+		},
+		"email" : {
+			"$ref" : "http://pwc01gisdata/specs/modules/Specs/Schemas/email_address.json"
+		},
+		"phone" : {
+			"title" : "phone number",
+			"type" : "string"
+		}
+	}
+}
